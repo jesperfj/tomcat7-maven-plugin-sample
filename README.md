@@ -7,12 +7,18 @@ This project generated with Spring Roo 1.2.0.RELEASE using:
 then modified `pom.xml` to add Tomcat7 Maven Plugin. Added plugin repository:
 
 	<pluginRepositories>
-		...
-	    <pluginRepository>
-	        <id>spring-roo-repository</id>
-	        <name>Spring Roo Repository</name>
-	        <url>http://spring-roo-repository.springsource.org/release</url>
-	    </pluginRepository>
+        <pluginRepository>
+            <id>apache.snapshots</id>
+            <name>Apache Snapshots</name>
+            <url>https://repository.apache.org/content/groups/snapshots-group/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+        ...
 	</pluginRepositories>
 
 and added plugin definition:
