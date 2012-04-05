@@ -96,3 +96,6 @@ then I get this output after doing a `mvn clean package`, manually deleting `.ex
 Petclinic now runs just fine, but it's on the `/petclinic` context path. The same happens if I completely remove the `path` parameter from the configuration.
 
 How to get petclinic running on the ROOT context path and serving static resources correctly?
+
+fixed http://svn.apache.org/viewvc?view=revision&revision=1310131
+have a try with last SNAPSHOT :-)
